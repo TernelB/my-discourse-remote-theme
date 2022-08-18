@@ -1,3 +1,12 @@
+$font-stack: 'Montserrat', sans-serif;
+$background-color: #ffffff;
+
+body {
+  font: 100% $font-stack;
+  color: $background-color;
+}
+
+
 .hello-world-banner {
     height: 300px;
     width: 100%;

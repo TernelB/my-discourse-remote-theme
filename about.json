@@ -1,8 +1,7 @@
 {
   "name": "My discourse remote theme",
   "about_url": "https://www.google.com",
-  "license_url": "https://github.com/TernelB/my-discourse-remote-theme/blob/main/LICENSE"
-  
+  "license_url": "https://github.com/TernelB/my-discourse-remote-theme/blob/main/LICENSE",
   "color_schemes": {
     "My Discourse Color Scheme": {
       "primary": "000000",

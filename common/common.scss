@@ -36,3 +36,9 @@ body {
     color: $font-color;
     transition: 1.5s;
 }
+
+.discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
+    background: $button-color;
+    color: $font-color;
+    transition: 1.5s;
+}

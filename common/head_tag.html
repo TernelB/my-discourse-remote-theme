@@ -4,3 +4,93 @@
 <script type="text/x-handlebars" data-template-name="/connectors/category-title-before/foobar2">
   <div style="height: 25px; width: 25px;background: red"></div>
 </script>
+
+<style>
+
+.nav-link-container {
+  display: inline;
+}
+.nav-link-container  li { 
+  display: inline-block;
+  float: right;
+}
+.nav-link-container  a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Open Sans'; 
+  line-height: 48px;
+  min-width: 90px;
+  font-size: 15px;
+  padding: 0 1em;
+}
+
+.d-header .icons .icon {
+     float: right;
+    color: #EC7825;
+}
+
+.add-header-links {
+    float: left;
+    padding-left: 0;
+}
+</style>
+
+<script type="text/discourse-plugin" version="0.2">
+api.decorateWidget('home-logo:after', helper => {
+    const showExtraInfo = helper.attrs.minimized;
+        if(!showExtraInfo) {
+            return helper.h('ul.nav-link-container', [
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://www.feverbee.com/resources', 
+                        text:'RESOURCES',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://experts.feverbee.com/', 
+                        text:'DISCUSSIONS',
+                        target:'_self'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'http://newyork.feverbee.com/', 
+                        text:'EVENTS',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'http://ondemand.feverbee.com/', 
+                        text:'TRAINING',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'http://www.feverbee.com/consultancy', 
+                        text:'CONSULTANCY',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'http://www.feverbee.com/about-us', 
+                        text:'ABOUT',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li', [
+                    helper.h('a.nav-link', {
+                        href:'http://www.feverbee.com', 
+                        text:'HOME',
+                        target:'_self'
+                    })
+                ])
+            ]);
+        }
+});
+</script>

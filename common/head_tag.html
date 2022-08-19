@@ -36,7 +36,7 @@
 </style>
 
 <script type="text/discourse-plugin" version="0.2">
-api.decorateWidget('home-logo:before', helper => {
+api.decorateWidget('header-icons:before', helper => {
     const showExtraInfo = helper.attrs.minimized;
         if(!showExtraInfo) {
             return helper.h('ul.nav-link-container', [

@@ -79,7 +79,7 @@ api.decorateWidget('home-logo:after', helper => {
         }
 });
 
-api.decorateWidget('header-buttons:before', helper => {
+api.decorateWidget('"header-icons:before"', helper => {
     const showExtraInfo = helper.attrs.minimized;
         if(!showExtraInfo) {
             return helper.h('ul.nav-link-container', [

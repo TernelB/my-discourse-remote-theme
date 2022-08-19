@@ -30,3 +30,9 @@ body {
   border-radius: 8px;
   background-color: $button-color;
 }
+
+.btn:hover {
+    background-color: $button-color;
+    color: $font-color;
+    transition: 1.5s;
+}

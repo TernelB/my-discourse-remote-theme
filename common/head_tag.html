@@ -79,10 +79,10 @@ api.decorateWidget('home-logo:after', helper => {
         }
 });
 
-api.decorateWidget('panel:after', helper => {
+api.decorateWidget('panel.clearfix:before', helper => {
     const showExtraInfo = helper.attrs.minimized;
         if(!showExtraInfo) {
-            return helper.h('ul.nav-link-second-container', [
+            return helper.h('ul.nav-link-container', [
                 helper.h('li', [
                     helper.h('a.nav-link', {
                         href:'https://vps3237.geckoapps.nl/', 

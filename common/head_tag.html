@@ -35,8 +35,8 @@
 }
 </style>
 
-<!-- <script type="text/discourse-plugin" version="0.2">
-api.decorateWidget('home-logo:after', helper => {
+<script type="text/discourse-plugin" version="0.2">
+api.decorateWidget('header-icons:after', helper => {
     const showExtraInfo = helper.attrs.minimized;
         if(!showExtraInfo) {
             return helper.h('ul.nav-link-container', [
@@ -77,20 +77,7 @@ api.decorateWidget('home-logo:after', helper => {
                 ])
             ]);
         }
-}); -->
-
-api.decorateWidget('header-icons:after', helper => {
-    const showExtraInfo = helper.attrs.minimized;
-        if(!showExtraInfo) {
-            return helper.h('ul.nav-link-container', [
-                helper.h('li', [
-                    helper.h('a.nav-link', {
-                        href:'https://vps3237.geckoapps.nl/', 
-                        text:'Home',
-                        target:'_self'
-                    })
-                ])
-            ]);
-        }
 });
+
+
 </script>

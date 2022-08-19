@@ -1,0 +1,8 @@
+$dark-theme-ins: #acf2bd;
+$light-theme-ins: #4da06d;
+
+$ins: dark-light-choose($light-theme-ins, $dark-theme-ins);
+
+:root {
+  --custom-ins: #{$ins};
+}

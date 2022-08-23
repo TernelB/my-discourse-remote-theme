@@ -71,7 +71,16 @@ api.decorateWidget('home-logo:after', helper => {
                         href:'https://vps3237.geckoapps.nl/domain/domains',
                         text:'Domains',
                         target:'_blank'
-                    }, helper.h('i.fa.fa-angle-down'))
+                    }, helper.h('i.fa.fa-angle-down')),
+                    helper.h('ul.dropdown-menu', [
+                        helper.h('li.hidden-for-mobile', [
+                            helper.h('a.nav-link', {
+                                href:'https://vps3237.geckoapps.nl/domain/domain?id=59',
+                                    text:'User',
+                                    target:'_blank'
+                            })
+                        ])
+                    ])
                 ]),
                 helper.h('li', [
                     helper.h('a.nav-link', {

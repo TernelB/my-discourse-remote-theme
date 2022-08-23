@@ -35,50 +35,50 @@
 }
 </style>
 
-<!--<script type="text/discourse-plugin" version="0.2">-->
-<!--api.decorateWidget('home-logo:after', helper => {-->
-<!--    const showExtraInfo = helper.attrs.minimized;-->
-<!--        if(!showExtraInfo) {-->
-<!--            return helper.h('ul.nav-link-container', [-->
-<!--                helper.h('li.hidden-for-mobile', [-->
-<!--                    helper.h('a.nav-link', {-->
-<!--                        href:'https://vps3237.geckoapps.nl/community/communities',-->
-<!--                        text:'Communities',-->
-<!--                        target:'_blank'-->
-<!--                    })-->
-<!--                ]),-->
-<!--                helper.h('li.hidden-for-mobile', [-->
-<!--                    helper.h('a.nav-link', {-->
-<!--                        href:'https://discourse.geckoapps.nl',-->
-<!--                        text:'Forum',-->
-<!--                        target:'_blank'-->
-<!--                    })-->
-<!--                ]),-->
-<!--                helper.h('li.hidden-for-mobile', [-->
-<!--                    helper.h('a.nav-link', {-->
-<!--                        href:'https://vps3237.geckoapps.nl/communityReadiness/communityReadinessListy',-->
-<!--                        text:'Test your Readiness',-->
-<!--                        target:'_blank'-->
-<!--                    })-->
-<!--                ]),-->
-<!--                helper.h('li.hidden-for-mobile', [-->
-<!--                    helper.h('a.nav-link', {-->
-<!--                        href:'https://vps3237.geckoapps.nl/domain/domains',-->
-<!--                        text:'Domains',-->
-<!--                        target:'_blank'-->
-<!--                    })-->
-<!--                ]),-->
-<!--                helper.h('li', [-->
-<!--                    helper.h('a.nav-link', {-->
-<!--                        href:'https://vps3237.geckoapps.nl/',-->
-<!--                        text:'Home',-->
-<!--                        target:'_self'-->
-<!--                    })-->
+<script type="text/discourse-plugin" version="0.2">
+api.decorateWidget('home-logo:after', helper => {
+    const showExtraInfo = helper.attrs.minimized;
+        if(!showExtraInfo) {
+            return helper.h('ul.nav-link-container', [
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://vps3237.geckoapps.nl/community/communities',
+                        text:'Communities',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://discourse.geckoapps.nl',
+                        text:'Forum',
+                        target:'_blank'
+                    })
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://vps3237.geckoapps.nl/communityReadiness/communityReadinessListy',
+                        text:'Test your Readiness',
+                        target:'_blank'
+                    }, helper.h('i.fa.fa-angle-down'))
+                ]),
+                helper.h('li.hidden-for-mobile', [
+                    helper.h('a.nav-link', {
+                        href:'https://vps3237.geckoapps.nl/domain/domains',
+                        text:'Domains',
+                        target:'_blank'
+                    }, helper.h('i.fa.fa-angle-down'))
+                ]),
+                helper.h('li', [
+                    helper.h('a.nav-link', {
+                        href:'https://vps3237.geckoapps.nl/',
+                        text:'Home',
+                        target:'_self'
+                    }, helper.h('i.fa.fa-angle-down'))
 
-<!--                ])-->
-<!--            ]);-->
-<!--        }-->
-<!--});-->
+                ])
+            ]);
+        }
+});
 
 
 <!--</script>-->

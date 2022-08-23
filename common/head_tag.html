@@ -60,6 +60,9 @@
     border-radius: 0.25rem;
     /* margin-top: 25px; */
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 </style>
 
@@ -89,7 +92,7 @@ api.decorateWidget('home-logo:after', helper => {
                         target:'_blank'
                     }, helper.h('i.fa.fa-angle-down'))
                 ]),
-                helper.h('li.hidden-for-mobile', [
+                helper.h('li.hidden-for-mobile.dropdown', [
                     helper.h('a.nav-link', {
                         href:'https://vps3237.geckoapps.nl/domain/domains',
                         text:'Domains',

@@ -1,16 +1,16 @@
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/> 
-
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- {{plugin-outlet name="topic-above-post-stream" args=(hash model=model)}} -->
 <script type="text/x-handlebars" data-template-name="/connectors/category-title-before/foobar2">
   <div style="height: 25px; width: 25px;background: red"></div>
 </script>
 
 <style>
- 
+
 .nav-link-container {
   display: inline;
 }
-.nav-link-container  li { 
+.nav-link-container  li {
   display: inline-block;
   float: right;
 }
@@ -42,38 +42,42 @@ api.decorateWidget('home-logo:after', helper => {
             return helper.h('ul.nav-link-container', [
                 helper.h('li.hidden-for-mobile', [
                     helper.h('a.nav-link', {
-                        href:'https://vps3237.geckoapps.nl/community/communities', 
+                        href:'https://vps3237.geckoapps.nl/community/communities',
                         text:'Communities',
                         target:'_blank'
                     })
                 ]),
                 helper.h('li.hidden-for-mobile', [
                     helper.h('a.nav-link', {
-                        href:'https://discourse.geckoapps.nl', 
+                        href:'https://discourse.geckoapps.nl',
                         text:'Forum',
                         target:'_blank'
                     })
                 ]),
                 helper.h('li.hidden-for-mobile', [
                     helper.h('a.nav-link', {
-                        href:'https://vps3237.geckoapps.nl/communityReadiness/communityReadinessListy', 
+                        href:'https://vps3237.geckoapps.nl/communityReadiness/communityReadinessListy',
                         text:'Test your Readiness',
                         target:'_blank'
                     })
                 ]),
                 helper.h('li.hidden-for-mobile', [
                     helper.h('a.nav-link', {
-                        href:'https://vps3237.geckoapps.nl/domain/domains', 
+                        href:'https://vps3237.geckoapps.nl/domain/domains',
                         text:'Domains',
                         target:'_blank'
                     })
                 ]),
                 helper.h('li', [
                     helper.h('a.nav-link', {
-                        href:'https://vps3237.geckoapps.nl/', 
+                        href:'https://vps3237.geckoapps.nl/',
                         text:'Home',
                         target:'_self'
+                    }),
+                    helper.h('i.fa-angle-down fa', {
+                        text:''
                     })
+
                 ])
             ]);
         }

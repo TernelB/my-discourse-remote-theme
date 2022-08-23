@@ -49,7 +49,7 @@
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: #000000;
     text-align: left;
     list-style: none;
     background-color: #fff;
@@ -105,6 +105,21 @@ api.decorateWidget('home-logo:after', helper => {
                                     text:'User',
                                     target:'_blank'
                             })
+                        ]),
+                        helper.h('li.hidden-for-mobile', [
+                            helper.h('a.nav-link', {
+                                href:'https://vps3237.geckoapps.nl/domain/domain?id=60',
+                                    text:'Organisation',
+                                    target:'_blank'
+                            })
+                        ])
+                        ,
+                        helper.h('li.hidden-for-mobile', [
+                            helper.h('a.nav-link', {
+                                href:'https://vps3237.geckoapps.nl/domain/domain?id=61',
+                                    text:'Technological and Infrastructural Domain',
+                                    target:'_blank'
+                            })
                         ])
                     ])
                 ]),
@@ -113,7 +128,7 @@ api.decorateWidget('home-logo:after', helper => {
                         href:'https://vps3237.geckoapps.nl/',
                         text:'Home',
                         target:'_self'
-                    }, helper.h('i.fa.fa-angle-down'))
+                    })
 
                 ])
             ]);

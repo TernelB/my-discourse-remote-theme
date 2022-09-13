@@ -84,7 +84,7 @@
 </style>
 
 <script type="text/discourse-plugin" version="0.2">
-api.decorateWidget('d-header-icons:before', helper => {
+api.decorateWidget('site-logo:after', helper => {
     const showExtraInfo = helper.attrs.minimized;
         if(!showExtraInfo) {
             return helper.h('ul.nav-link-container', [

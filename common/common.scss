@@ -10,6 +10,9 @@ body {
 //   background-color: $background-color;
 }
 
+.nav-link-container  a {
+    color: var(--quaternary);
+}
 
 .hello-world-banner {
     height: 300px;

@@ -4,12 +4,12 @@
   "license_url": "https://github.com/TernelB/my-discourse-remote-theme/blob/main/LICENSE",
   "color_schemes": {
     "My Discourse Color Scheme": {
-      "primary": "666",
+      "primary": "6666",
       "secondary": "ffffff",
       "tertiary": "0088cc",
       "quaternary": "e45735",
       "header_background": "ffffff",
-      "header_primary": "666",
+      "header_primary": "6666",
       "highlight": "ffff4d",
       "danger": "e45735",
       "success": "009900",

@@ -11,7 +11,7 @@ body {
 }
 
 .nav-link-container  a {
-    color: var(--primary);
+    color: $header-menu-color;
 }
 
 .hello-world-banner {
